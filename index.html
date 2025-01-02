@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>CloudOps Engineer @ DXC Technology | AWS, Cloud Infrastructure</p>
+            <h1>Hi, I'm <span>Tharun Sai Panchumarthi</span>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>As a dedicated graduate student in Advanced Data Analytics at the University of North Texas, my current academic pursuits are intricately linked with my hands-on experience as a former CloudOps Engineer at DXC Technology. Mastering a blend of cloud technologies, including AWS services and cloud infrastructure design, I've ensured seamless operations and strict adherence to SLAs, underscoring my commitment to service excellence.
+
+                    With certifications in AWS Cloud Practitioner and Oracle Cloud Infrastructure, complemented by skills in Ansible, Tanium, and Linux System Administration, I navigate the complexities of cloud environments with a problem-solving mindset. My educational journey, underpinned by practical expertise, is a testament to my drive to innovate and optimize in the evolving landscape of cloud computing and data analytics.</p>
+                
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Cloud Environments</span><br>Amazon Web Services (AWS)</li>
+                        <li><span>Configuration Management Tools</span><br>Terraform, Ansible, Chef</li>
+                        <li><span>Containerization Tools</span><br>Kubernetes, Docker, OpenShift, Elastic Kubernetes Services (EKS)</li>
+                        <li><span>Virtualization</span><br>Windows Hyper-V, Virtual Box, VMware</li>
+                        <li><span>Operating Systems</span><br>Linux (Red Hat), Unix, Ubuntu, Windows</li>
+                        <li><span>Database</span><br> MongoDB, MySQL, PostgreSQL, Amazon Aurora, DynamoDB, Cassandra</li>
+                        <li><span>Scripting languages</span><br>Python, JavaScript, Ruby, Bash shell, Power shell, JSON, groovy</li>
+                        <li><span>Build tools</span><br>Maven, Gradle, ANT</li>
+                        <li><span>Version Control Tools</span><br>GIT, Bitbucket, SVN, GITLAB, GITHUB</li>
+                        <li><span>Log and Monitoring Tools </span><br> Splunk, Nagios, CloudWatch, ELK, New Relic, Dynatrace</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Aug 2022 - July 2023</span><br>Senior Assistant Service Delivery Coordinator (AWS Cloud Ops Engineer) @ DXC Technology </li>
+                        <div>
+                        </p>About my Experience in major public cloud AWS services like EC2, S3, IAM, Load Balancers, Route53, CloudWatch, VPC, Cloud Trail, Lambda function, SNS, SQS, Service Catalog, ACM, etc.</p>
+                        </p>Kafka topic creation and adding ACLS and Creating Cloud Watch Events. Design, implement and maintain all AWS infrastructure and services within a managed service environment.</p>
+                        </p>Design, Deploy, and maintain Enterprise class security, Network, and Systems management applications within an AWS environment.</p>
+                        </p>Daily Operations providing smooth delivery to the customers. Make sure always SLA is met 100%.</p>
+                        </p>Coordination on customer escalation, process improvements and to make sure that server is up and running 24/7.</p>
+                        </p>Creating New Instances in Amazon Web Services Management Console and Cloning the Existing Instance.</p>
+                        </p>Troubleshooting the ongoing AWS issues problems within the SLA.</p>
+                        </p>Deploying/Hosting Applications on the servers.</p>
+                        </p>Creating users, roles, and profiles, assigning roles and profiles to users.</p>
+                        </p>Taking Backups of Amazon Machine Images from running Instances and working with snapshots of the volumes.</p>
+                        </p>Working with Elastic Block Store like attaching EBS volumes to Instances, detaching volumes, and expanding EBS volumes.</p> 
+                        </p>Restart the ECS container through the lambda function.</p>
+                        </p>Able to update the parameters in the task definition.</p> 
+                        </p>Good in handling the ECS containers stop and start activities as per requirement.</p>
+                        </p>Experience in Production Change calls/ Bridge calls and performing the activities as per client requirement</p>
+                        </p>Good experience in Certificate creation and renewal through ACM.</p></div>  
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023 - 2025</span><br>Master of Science in Advanced Data Analytic at University of North Texas</li>
+                        <li><span>2019 - 2022</span><br>Bachelors in computer science from Sir C R Reddy College</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------projects---------------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>ITO/Cloud Platforms - Western Union Cloud Delivery - Hybrid Cloud</h2>
+                <p>With extensive experience in cloud technologies and IT operations, I am proficient in ITIL practices for Incident, Change, and Problem Management. I have worked on creating cloud-based infrastructures tailored to business requirements, adhering to organizational frameworks, and ensuring security within secure Virtual Private Clouds (VPCs). I am skilled in developing and maintaining scripts for provisioning and de-provisioning cloud instances as needed for workloads and managing security compliance, including password and key rotation policies. I have a strong background in handling audit and compliance activities and creating alerts to monitor system health, ensuring issues are reported to SysOps teams or escalated appropriately. Cost optimization is a key focus in my role, where I manage the full cloud lifecycle—from provisioning and automation to security—while ensuring that resources are efficiently utilized and optimized. I have experience in migrating on-premises applications to the cloud, performing cloud platform upgrades, and automating cloud/server tasks using scripts. By utilizing tools like CloudWatch, I monitor cloud resource utilization and performance, manage on-premise backups via cloud services, and deploy automation infrastructure with CloudFormation. I also work on optimizing resources, resource tagging for cost-sharing, and managing VPCs and Bastion hosts, coordinating with network teams to finalize cloud VPC connections. My responsibilities extend to managing disaster recovery, backups, and ensuring data integrity and access control within AWS, as well as capacity planning for cloud components through effective monitoring tools.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Design and Development of an Online Doctor Appointment System</h2>
+                <p>The project focuses on designing and developing an Online Doctor Appointment System aimed at streamlining the doctor-patient interaction. This system enables patients to easily book appointments with doctors and track their medical progress, while also assisting doctors in managing their schedules and patient data. The front end is built using HTML, CSS, and JavaScript, while the back end is powered by PHP and MySQL for database management. The development environment is set up using XAMPP server software.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Summary on Analyzing customer behavior project</h2>
+                <p>Best Buy Company is one of the e-commerce industries which specializes in marketing electronic devices. As a scrum team representing Best Buy company, we were given a project to analyze our customer behavior. This project is mainly focused on predicting our customer behavior. To understand the factors influencing our customer satisfaction levels and the membership type of our customers.
+                    Our project objective is to deliver a valuable product to our stakeholders inclining towards the product vision and goals. The framework we chose for implementing this project is scrum methodology. We followed all the scrum events involving sprint planning, daily scrum, sprint review and sprint retrospective. Final increments were achieved by implementing the product backlog items and sprint backlog items.
+                    The tools we used for implementing the increments are Jupyter Notebook to run python simulations. Tableau, to create a dashboard visualizing customer satisfaction levels and their membership distribution. Microsoft power point to prepare presentation for sprint review. We will be establishing a total of two shippable increments. We have one product vision and six sprint goals.
+                    The potential stakeholders involved in the project would be customers, company employees, our business partners, investors, and suppliers.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> tharunsaip1999@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +1 9408436811</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Tharun Sai Panchumarthi.<i class="fas fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
